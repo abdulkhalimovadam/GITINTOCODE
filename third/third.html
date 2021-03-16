@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3 web site</title>
+	<meta charset="utf-8">
+	<script src="https://use.fontawesome.com/0e49e9e839.js"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	<style type="text/css">
+		* { 
+			list-style-type: none
+		}
+		a { 
+			text-decoration: none;
+			color: unset;
+		}
+		body { 
+			margin: 0;
+		    font-family:PT Sans; 
+		}
+		header { 
+			background-color: #000000;
+			margin-bottom: 40px
+        }
+		.conteiner-wrap {
+		    width: 1170px;
+		    margin: auto;
+		}
+		nav { 
+			display: flex; 
+			justify-content: space-between; 
+            padding: 36px; 
+            color: #FFFFFF;
+		}
+        .logo { 
+        	display: flex; 
+        }
+        .logo .car { 
+        	width: 29px;
+        	height: 17px; 
+        	background-color: #64B3D5;
+        	color: white;
+        	border-radius: 3px;
+        	padding: 3px;
+        	text-align: center;
+            align-items: center;
+            
+            font-size: 14px
+        }
+        .nav {
+        	display: flex;
+        	justify-content: space-between;
+        	padding: 0;
+        	width: 368px;
+        	margin: 0;
+        }
+        .search img {
+        	width: 16px;
+        	height: 17px;
+        }
+        .block-obshiy {
+        	display: flex;
+        	justify-content: space-between;
+        }
+        .block-obshiy2 {
+        	width: 779px;
+        }
+        .c-class {
+        	background-image: url(c-class.png);
+        	background-size: cover;
+        	width: 373.33px;
+        	height:560px;
+        	border-radius: 5px;
+        	color: white;
+        	box-sizing: border-box;
+        }
+        .c-class .vehicle {
+        	background-color: #4A90E2;
+        	width: 62px;
+        	height: 22px;
+        	text-align: center;
+        	line-height: 22px;
+        	border-radius: 3px;
+        	margin: 30px 0 320px 21.67px;
+        }
+        .c-class .text-for-cars {
+        	padding: 63px 3px 23px 30px;
+        }
+        .text-for-cars p {
+         font-size: 14px;
+        }
+        .text-for-cars h3 {
+        	font-size: 26px;
+        	margin-top: 6px;
+
+        }
+        .block-obshiy3 {
+        	display: flex;
+        	justify-content: space-between;
+        	margin-bottom: 20px;
+        }
+        .cls-class {
+        	background-image: url(cls-class.png);
+        	background-size: cover;
+        	width: 380px;
+        	height:270px;
+        	border-radius: 5px;
+        	color: #FFFFFF
+        }
+        img { width: 100%; }
+        .cls-class .vehicle {
+        	background-color: #4A90E2;
+        	width: 62px;
+        	height: 22px;
+        	text-align: center;
+        	line-height: 22px;
+        	border-radius: 3px;
+        	margin: 30px 0 50px 21.67px}
+        .cls-class .text-for-cars {
+        	padding: 30px 40px 0px 20px;
+        }
+        .text-for-cars p {
+         font-size: 14px;
+        }
+        .text-for-cars h3 {
+        	font-size: 26px;
+        	margin-top: 6px;
+        }
+
+        .audi-q6 {
+        	background-image: url(audi-q6.png);
+        	background-size: 100%;
+        	width: 380px;
+        	height:270px;
+        	border-radius: 5px;
+        	color: #FFFFFF;
+        	background-position: center;
+        }
+         .audi-q6 .vehicle {
+        	background-color: #4A90E2;
+        	width: 62px;
+        	height: 22px;
+        	text-align: center;
+        	line-height: 22px;
+        	border-radius: 3px;
+        	margin: 30px 0 50px 21.67px;
+        	color: white;
+        }
+        .audi-q6 .text-for-cars {
+        	padding: 30px 40px 0px 20px;
+        }
+        .text-for-cars p {
+         font-size: 14px;
+        }
+        .text-for-cars h3 {
+        	font-size: 26px;
+        	margin-top: 6px;
+        }
+        .block-obshiy4 {
+        	display: flex;
+        	justify-content: space-between;
+        }
+        .audi-a6 {
+        	background-image: url(audi-a6.png);
+        	background-size: cover;
+        	width: 380px;
+        	height:270px;
+        	border-radius: 5px;
+        	color: #FFFFFF
+        }
+        .audi-a6 .vehicle {
+        	background-color: #4A90E2;
+        	width: 62px;
+        	height: 22px;
+        	text-align: center;
+        	line-height: 22px;
+        	border-radius: 3px;
+        	margin: 30px 0 50px 21.67px
+        	color: white;}
+        .audi-a6 .text-for-cars {
+        	padding: 30px 40px 0px 20px;
+        }
+        .text-for-cars p {
+         font-size: 14px;
+        }
+        .text-for-cars h3 {
+        	font-size: 26px;
+        	margin-top: 6px;
+        }
+        .fiat {
+        	background-image: url(fiat.png);
+        	background-size: cover;
+        	width: 380px;
+        	height:270px;
+        	border-radius: 5px;
+        	color: #FFFFFF
+        }
+        .fiat .vehicle {
+        	background-color: #4A90E2;
+        	width: 62px;
+        	height: 22px;
+        	text-align: center;
+        	line-height: 22px;
+        	border-radius: 3px;
+        	margin: 30px 0 50px 21.67px
+        	color: white;}
+        .fiat .text-for-cars {
+        	padding: 30px 40px 0px 20px;
+        }
+        .text-for-cars p {
+         font-size: 14px;
+        }
+        .text-for-cars h3 {
+        	font-size: 26px;
+        	margin-top: 6px;
+        }
+        .stranica {
+        	display: flex;
+        	width: 1170px;
+        	margin-top: 75px;
+        	justify-content: space-between;
+        }
+        .osnovnoe {
+        	width: 790.88px
+        }
+        .first {
+        	height: 635px;
+        }
+        .second {
+        	height: 635px;
+        }
+        .third { 
+        	height: 635px;
+        }
+        .fouth {
+        	height: 635px;
+        }
+        .fifth {
+        	height: 635px;
+        }
+        .textfor1 {
+        	width: 730px;
+        	margin: auto;
+        	position: relative;
+        	bottom: 180px;
+        	background-color: white;
+        	border-radius: 5px;
+        }
+        .text1 p {
+        	color:#666666;
+        }
+        .text1 {
+        	padding: 30px 58px 30px 30px;
+
+        }
+        .textfor1 .vehicle {
+        	background-color: #4A90E2;
+        	width: 62px;
+        	height: 22px;
+        	text-align: center;
+        	line-height: 22px;
+        	border-radius: 3px;
+        	margin:34px 650px 20px 30px;
+        	position: relative;
+        	top: 34px;
+        	color: white;
+        }
+        .dopolnitelno {
+        	width: 270px
+        }
+        img { 
+        	border-radius: 5px;
+        }
+        .textracer .food {
+        	color: #999999;
+        }
+        .textracer .biography{
+        	color: #666
+        }
+        .racer .button {
+            background-color: #232323;
+            border-radius: 5px;
+            text-align: center;
+            line-height:50px;
+            width: 270px;
+            height: 50px;
+            color: white;
+        }
+
+        .salon .vehicle {
+        	background-color: #4A90E2;
+        	width: 62px;
+        	height: 22px;
+        	text-align: center;
+        	line-height: 22px;
+        	border-radius: 3px;
+        	color: white;
+        	position: relative;
+        	top: 40px;
+        	left: 20px;
+        	font-size: 12px;
+        }
+        .salon h2 {
+            margin-top:50px;
+            margin-bottom:0
+        }
+        .salon .name {
+        	color: #666666;
+        }
+        .setka{
+        	width: 270px
+        	margin-top:20px;
+        }
+        .instagram {
+        	font-size: 18px;
+        }
+        .first-stolb{
+        	display: flex;
+        	justify-content: space-between;
+        }
+        .second-stolb{
+        	display: flex;
+        	justify-content: space-between;
+        }
+        .third-stolb{
+        	display: flex;
+        	justify-content: space-between;
+        }
+        .View-instagram {
+        	background-color:#232323;
+        	color:white;
+        	display: flex;
+        	padding: 18px 66px;
+        	justify-content: space-between;
+
+        }
+        .logoinst {
+        	display: flex;
+        }
+        .tagstr{
+        	display: flex;
+        	margin-top: 10px;
+        }
+        .tage {
+        	padding: 7px 16px;
+            background-color: #bebebe;
+            border-radius: 5px
+        }
+         .tage2 {
+        	padding: 7px 16px;
+            background-color: #bebebe;
+            margin: 0 10px;
+            border-radius: 5px;
+        }
+        .your-name {
+        	background: #FFFFFF;
+            border: 1px solid #E5E5E5;
+            box-sizing: border-box;
+            border-radius: 3px;
+            padding: 17px 140px 17px 15px;
+            margin-top: 27px;
+        }
+        .adress {
+        	background: #FFFFFF;
+            border: 1px solid #E5E5E5;
+            box-sizing: border-box;
+            border-radius: 3px;
+            padding: 17px 120px 17px 15px;
+            margin-top: 10px;
+        }
+        .button-sub {
+        	background: #232323;
+            border-radius: 3px;
+            margin-top: 10px;
+            padding: 17px 44px;
+            color: white;
+            text-align: center;
+        }
+        .menuses {
+        	justify-content: left;
+        	width: 100%;
+            margin:30px 0 80px;
+        }
+        .next {
+        	display: flex;
+        	justify-content: space-between;
+        	width: 340px;
+        }
+        .next1 {
+        	border: 1px solid #E5E5E5;
+            box-sizing: border-box;
+            border-radius: 3px;
+            padding: 16px;
+        }
+        .bmw-stick {
+           background-color: #4A90E2;
+        	width: 62px;
+        	height: 16px;
+        	text-align: center;
+        	line-height: 22px;
+        	border-radius: 3px;
+        	position: relative;
+        	top:40px;
+        	left: 15px;
+        	color: white;
+        	padding: 3px 11px 6px; 
+        	color: white;
+        }
+        .ads {
+        	display: flex;
+        	justify-content: space-between;
+        	
+        }
+        .bmw-m5 {
+        	width: 270px;
+        }
+        .textforrec {
+        	padding: 0 3px;
+        }
+        .textforrec p {
+        	color: #666
+        }
+        .recomendation {
+        	margin-bottom: 79px;
+        }
+        .part-1 {
+        	background-color: #171717;
+        	padding: 65px 0;
+        	display: flex;
+        	justify-content: space-between;
+        	color: white;
+        }
+        .display-flexforlogo {
+        	display: flex;
+        }
+        .logo-footer  .cars {
+        	width: 29px;
+        	height: 17px; 
+        	background-color: #64B3D5;
+        	color: white;
+        	border-radius: 3px;
+        	padding: 3px;
+        	text-align: center;
+            align-items: center;
+            
+            font-size: 14px
+        }
+        .logo-footer {
+        	width: 270px;
+        	color: white;
+        	margin-top:5px;
+        }
+        .icons {
+        	display: flex;
+        	justify-content: space-between;
+        }
+        .textfooter p {
+         font-size: 14px;
+         padding: 0 18px 0 0;
+         margin-bottom: 64px;
+         color: #CECECE
+
+        }
+        .textfooter h2 {
+        	margin-bottom: 23px;
+        }
+        .icon {
+        	background-color: #373737;
+        	padding:12px 13px;
+        }
+        .recentpost {
+          width: 293px;
+        } 
+        .recentpost h1 {margin-top:0;}
+        .part-1 .conteiner-wrap {
+        	display: flex;
+        	justify-content:space-between; 
+        }
+        .aboutcars {
+        	display: flex;
+        	justify-content: space-between;
+        	margin-bottom: 25px;
+
+        }
+        .aboutcars img {
+        	width: 95px;
+        	height: 95px;
+        }
+        .textos h4  {
+            margin: 0 0 0 13px;   
+        }
+        .textos p {
+        	margin: 13px 0 0 13px ;
+        	color:;
+        }
+        .your-name2 {
+        	background: #373737;
+            border: 1px solid #373737;
+            box-sizing: border-box;
+            border-radius: 3px;
+            padding: 17px 140px 17px 15px;
+            margin-top: 27px;
+        }
+        .adress2 {
+        	background: #373737;
+            border: 1px solid #373737;
+            box-sizing: border-box;
+            border-radius: 3px;
+            padding: 17px 120px 17px 15px;
+            margin-top: 10px;
+        }
+        .button-sub2 {
+        	background: #232323;
+            border-radius: 3px;
+            margin-top: 10px;
+            padding: 17px 44px;
+            color: white;
+            text-align: center;
+        }
+        .registr2 {
+        	margin-right: 60px;
+        }
+        .end {
+        	background-color: #000;
+        }
+        .end .conteiner-wrap {
+        	display: flex;
+        	justify-content: space-between;
+        	color: white;
+        	padding: 39px 0;
+        }
+	</style>
+</head>
+<body>
+<header>
+	<div class="conteiner-wrap">
+	     <nav>
+	     	<div class="logo">
+	     		Premium
+               <div class="car">
+               	CAR
+               </div>
+	     	</div>
+	     	<div class="menu">
+	     		<ul class="nav">
+	     			<li><a href="#">Home</a></li>
+	     			<li><a href="#">Recipes</a></li>
+	     			<li><a href="#">Article</a></li>
+	     			<li><a href="#">Contact</a></li>
+	     			<li><a href="#">Purchase</a></li>
+	     		</ul>
+	     	</div>
+	     	<div class="search"><img src="search.png"></div>
+	     </nav>
+	</div>
+</header>
+<main>
+	<div class="conteiner-wrap">
+		<div class="block-obshiy">
+			<div class="c-class">
+				<div class="vehicle">
+					Vehicle
+				</div>
+				<div class="text-for-cars">
+			   <p>Rickie Baroch - June 6, 2019</p>
+			   <h3>
+			   	One of Saturn’s largest rings may be newer than anyone
+			   </h3>
+			   </div>
+			</div>
+			<div class="block-obshiy2">
+				<div class="block-obshiy3">
+		 	<div class="cls-class">
+				<div class="vehicle">
+					Vehicle
+				</div>
+				<div class="text-for-cars">
+			   <p>Rickie Baroch - June 6, 2019</p>
+			   <h3>
+			   	One of Saturn’s largest rings may be newer than anyone
+			   </h3>
+			   </div>
+			</div>
+					<div class="audi-q6">	
+				<div class="vehicle">
+					Vehicle
+				</div>
+				<div class="text-for-cars">
+			   <p>Rickie Baroch - June 6, 2019</p>
+			   <h3>
+			   	One of Saturn’s largest rings may be newer than anyone
+			   </h3>
+			   </div>
+			</div>
+				</div>
+				<div class="block-obshiy4">
+					<div class="audi-a6">
+						<div class="vehicle">
+					Vehicle
+				</div>
+				<div class="text-for-cars">
+			   <p>Rickie Baroch - June 6, 2019</p>
+			   <h3>
+			   	One of Saturn’s largest rings may be newer than anyone
+			   </h3>
+			   </div>
+					</div>
+					<div class="fiat">
+						<div class="vehicle">
+					Vehicle
+				</div>
+				<div class="text-for-cars">
+			   <p>Rickie Baroch - June 6, 2019</p>
+			   <h3>
+			   	One of Saturn’s largest rings may be newer than anyone
+			   </h3>
+			   </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<div class="conteiner-wrap">
+	<div class="stranica">
+		<div class="osnovnoe">
+			<div class="first">
+				<div class="car">
+					<img src="c-class2020.png">
+				</div>
+				<div class="textfor1">
+					<div class="vehicle">
+					       Vehicle
+				    </div>
+				    <div class="text1">
+				    <h2>
+				    One of Saturn’s largest rings may be newer than anyone</h2>
+				    <p class="fio">
+				    	Rickie Baroch - June 6, 2019
+				    </p>
+				    <p class="info">
+				    	Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+				    </p>
+				    </div>
+				</div>
+			</div>
+				<div class="second">
+				<div class="car">
+					<img src="bmw-i8.png">
+				</div>
+				<div class="textfor1">
+					<div class="vehicle">
+					       Vehicle
+				    </div>
+				    <div class="text1">
+				    <h2>
+				    One of Saturn’s largest rings may be newer than anyone</h2>
+				    <p class="fio">
+				    	Rickie Baroch - June 6, 2019
+				    </p>
+				    <p class="info">
+				    	Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+				    </p>
+				    </div>
+				</div>
+			</div>
+			<div class="third">
+				<div class="car">
+					<img src="ferrary.png">
+				</div>
+				<div class="textfor1">
+					<div class="vehicle">
+					       Vehicle
+				    </div>
+				    <div class="text1">
+				    <h2>
+				    One of Saturn’s largest rings may be newer than anyone</h2>
+				    <p class="fio">
+				    	Rickie Baroch - June 6, 2019
+				    </p>
+				    <p class="info">
+				    	Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+				    </p>
+				    </div>
+				</div>
+			</div>
+			<div class="fouth">
+				<div class="car">
+					<img src="big.png">
+				</div>
+				<div class="textfor1">
+					<div class="vehicle">
+					       Vehicle
+				    </div>
+				    <div class="text1">
+				    <h2>
+				    One of Saturn’s largest rings may be newer than anyone</h2>
+				    <p class="fio">
+				    	Rickie Baroch - June 6, 2019
+				    </p>
+				    <p class="info">
+				    	Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+				    </p>
+				    </div>
+				</div>
+			</div>
+			<div class="fifth">
+				<div class="car">
+					<img src="cupper.png">
+				</div>
+				<div class="textfor1">
+					<div class="vehicle">
+					       Vehicle
+				    </div>
+				    <div class="text1">
+				    <h2>
+				    One of Saturn’s largest rings may be newer than anyone</h2>
+				    <p class="fio">
+				    	Rickie Baroch - June 6, 2019
+				    </p>
+				    <p class="info">
+				    	Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+				    </p>
+				    </div>
+				</div>
+			</div>
+		</div>
+		<div class="dopolnitelno">
+			<div class="racer">
+				<div class="img">
+					<img src="racer.png">
+				</div>
+				<div class="textracer">
+					<h3>Leon Hunt</h3>
+					<p class="food">Food & cooking bloger</p>
+					<p class="biography">
+					Hi, I'm Leon. Cooking is the way I express my creative side to the world. Welcome to my Kitchen Corner on…
+				   </p>
+				</div>
+				<div class="button">
+					Continue Reading
+				</div>
+			</div>
+			<div class="salon">
+				<h2>Popular posts</h2>
+				<div class="vehicle">
+					Vehicle
+				</div>
+				<div><img src="salon.png"></div>
+				<p>
+					One of Saturn’s largest rings may be newer than anyone
+				</p>
+				<p class="name">
+					Rickie Baroch - June 6, 2019
+				</p>
+			</div>
+					<div class="salon">
+				<div class="vehicle">
+					Vehicle
+				</div>
+				<div><img src="4x4-1.png"></div>
+				<p>
+					One of Saturn’s largest rings may be newer than anyone
+				</p>
+				<p class="name">
+					Rickie Baroch - June 6, 2019
+				</p>
+			</div>
+					<div class="salon">
+				<div class="vehicle">
+					Vehicle
+				</div>
+				<div><img src="4x4-2.png"></div>
+				<p>
+					One of Saturn’s largest rings may be newer than anyone
+				</p>
+				<p class="name">
+					Rickie Baroch - June 6, 2019
+				</p>
+			</div>
+			<div class="instagram">
+				<h3>Instagram</h3>
+				<div class="setka">
+					<div class="first-stolb">
+						<div><img src="rectangle1.png"></div>
+						<div><img src="rectangle2.png"></div>
+					</div>
+					<div class="second-stolb">
+						<div><img src="rectangle3.png"></div>
+						<div><img src="rectangle4.png"></div>
+					</div>
+					<div class="third-stolb">
+						<div><img src="rectangle5.png"></div>
+						<div><img src="rectangle6.png"></div>
+					</div>
+				</div>
+				<div class="View-instagram">
+					<div class="logoin">
+						<i class="fa fa-instagram" aria-hidden="true"></i>
+					</div>
+					<div class="logoinst">
+						View instagram
+					</div>
+				</div>
+			</div>
+			<div class="bardak">
+				<div class="tag"><h2>tags</h2></div>
+				<div class="tags">
+					<div class="tagstr">
+						<div class="tage">Business</div>
+						<div class="tage2">Freelance</div>
+						<div class="tage">Money</div>
+					</div>
+					<div class="tagstr">
+						<div class="tage">Experience</div>
+						<div class="tage2">Lifestyle</div>
+						<div class="tage">SEO</div>
+					</div>
+					<div class="tagstr">
+						<div class="tage">Wordpress</div>
+						<div class="tage2">Marketing</div>
+						<div class="tage">UX</div>
+					</div>
+					<div class="tagstr">
+						<div class="tage">Modern</div>
+						<div class="tage2">Success</div>
+						<div class="tage">Nature</div>
+					</div>
+					<div class="tagstr">
+						<div class="tage">Productivity</div>
+						<div class="tage2">Sales page</div>
+					</div>
+					<div class="tagstr">
+						<div class="tage">Sell</div>
+						<div class="tage2">Teamwork</div>
+						<div class="tage">Monetize</div>
+					</div>
+				</div>
+			</div>
+			<div class="registr">
+				<div class="email">
+					<h2>Email newsletter</h2>
+					<p>Sign up to receive email updates and to hear what's going on.</p>
+				</div>
+				<div class="your-name">
+					Your name
+				</div>
+				<div class="adress">
+					Your emeil adress
+				</div>
+				<div class="button-sub">
+					Subscribe to newsletter
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="menuses">
+	<div class="next">
+		<div class="next1">
+			<
+		</div>
+		<div class="next1">
+			1
+		</div>
+		<div class="next1">
+			2
+		</div>
+		<div class="next1">
+			3
+		</div>
+		<div class="next1">
+			...
+		</div>
+		<div class="next1">
+			8
+		</div>
+		<div class="next1">
+			>
+		</div>
+	</div>
+    </div>
+    <div class="recomendation">
+    	<div class="mostpop"><h1>Most popular</h1></div>
+    	<div class="ads">
+    		<div class="bmw-m5">
+    			<div class="bmw-stick">BMW</div>
+    			<div class="photo">
+    				<img src="bmw-m5.png">
+    			</div>
+                <div class="textforrec">
+                	<h2>One of Saturn’s largest rings may be newer than anyone</h2>
+                	<p>Rickie Baroch - June 6, 2019</p>
+                </div>
+    		</div>
+    		    		<div class="bmw-m5">
+    			<div class="bmw-stick">BMW</div>
+    			<div class="photo">
+    				<img src="bmw-salon1.png">
+    			</div>
+                <div class="textforrec">
+                	<h2>One of Saturn’s largest rings may be newer than anyone</h2>
+                	<p>Rickie Baroch - June 6, 2019</p>
+                </div>
+    		</div>
+    		    		<div class="bmw-m5">
+    			<div class="bmw-stick">BMW</div>
+    			<div class="photo">
+    				<img src="bmw-m3.png">
+    			</div>
+                <div class="textforrec">
+                	<h2>One of Saturn’s largest rings may be newer than anyone</h2>
+                	<p>Rickie Baroch - June 6, 2019</p>
+                </div>
+    		</div>
+    		    		<div class="bmw-m5">
+    			<div class="bmw-stick">BMW</div>
+    			<div class="photo">
+    				<img src="bmw-salon2.png">
+    			</div>
+                <div class="textforrec">
+                	<h2>One of Saturn’s largest rings may be newer than anyone</h2>
+                	<p>Rickie Baroch - June 6, 2019</p>
+                </div>
+    		</div>
+    	</div>
+    </div>
+</div>
+</main>
+<footer class="part-1">
+	<div class="conteiner-wrap">
+	<div class="Premiumcar">
+		<div class="logo-footer">
+		  <div class="display-flexforlogo">
+	     		Premium
+           <div class="cars">
+               	CAR
+           </div>
+          </div>
+           <div class="textfooter">
+           	<p>
+           		Short description about the company Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+           	</p>
+           	<h2>
+           		Keep in touch
+           	</h2>
+           </div>
+           <div class="icons">
+           	<div  class="icon">
+           		<i class="fa fa-facebook" aria-hidden="true"></i>
+           	</div>
+           	<div class="icon">
+           		<i class="fa fa-twitter" aria-hidden="true"></i>
+           	</div>
+           	<div class="icon">
+           		<i class="fa fa-pinterest-p" aria-hidden="true"></i>
+           	</div>
+           	<div class="icon">
+           		<i class="fa fa-google-plus" aria-hidden="true"></i>
+           	</div>
+           	<div class="icon">
+           		<i class="fa fa-instagram" aria-hidden="true"></i>
+           	</div>
+           </div>
+	    </div>
+	</div>
+	<div class="recentpost">
+		<h1>Recent posts</h1>
+		<div class="aboutcars">
+			<div>
+				<img src="Mask1.png">
+			</div>
+			<div class="textos">
+			<h4>One of Saturn’s largest rings may be newer than…</h4>
+			<p>Rickie Baroch - June 6, 2019</p>
+		    </div>
+		</div>
+				<div class="aboutcars">
+			<div>
+				<img src="Mask2.png">
+			</div>
+			<div class="textos">
+			<h4>One of Saturn’s largest rings may be newer than…</h4>
+			<p>Rickie Baroch - June 6, 2019</p>
+		    </div>
+		</div>
+				<div class="aboutcars">
+			<div>
+				<img src="Mask3.png">
+			</div>
+			<div class="textos">
+			<h4>One of Saturn’s largest rings may be newer than…</h4>
+			<p>Rickie Baroch - June 6, 2019</p>
+		    </div>
+		</div>
+	</div>
+	<div class="registr2">
+		<h1>Newsletter</h1>
+		<div class="your-name2">
+			Your name
+	    </div>
+		<div class="adress2">
+			Your emeil adress
+		</div>
+		<div class="button-sub2">
+			Subscribe to newsletter
+		</div>
+	</div>
+	</div>
+</footer>
+<footer class="end">
+	<div class="conteiner-wrap">
+		<div class="companyinfo">
+			@2019 Logwork. All Right Reserved.
+		</div>
+		<div class="menu">
+	     		<ul class="nav">
+	     			<li><a href="#">Home</a></li>
+	     			<li><a href="#">Recipes</a></li>
+	     			<li><a href="#">Article</a></li>
+	     			<li><a href="#">Contact</a></li>
+	     			<li><a href="#">Purchase</a></li>
+	     		</ul>
+	     	</div>
+	</div>
+</footer>
+</body>
+</html>

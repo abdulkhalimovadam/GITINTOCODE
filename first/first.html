@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
+	<title>Первая практика</title>
+	<style type="text/css">
+		* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-family: 'Gilroy';
+	font-size: 18px;
+}
+img {
+	width: 100%;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+header {
+	background-color: #FAFAFA;
+	padding: 40px;
+}
+.header-wrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header .logo {
+	width: 40px;
+}
+header nav {
+	width: 330px;
+}
+.nav {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+}
+.gift-finder {
+	width: 140px;
+	height: 40px;
+	line-height: 40px;
+	border: 1px solid #F7941E;
+	border-radius: 5px;
+	color: #F7941E;
+	text-transform: uppercase;
+	text-align: center;
+}
+.features {
+	background-color: #f1f1f1;
+}
+.features-info, .features-work {
+	display: flex;
+	align-items: center;
+}
+.features-desc, .features-img {
+	width: 50%;
+}
+.features-img img {
+	display: block;
+}
+.features .content {
+	width: 430px;
+	margin: auto;
+}
+.features-title {
+	font-size: 55px;
+	margin-bottom: 35px;
+}
+.features-subtitle {
+	font-size: 32px;
+	font-weight: 400;
+	margin-bottom: 25px;
+}
+.features-desc p {
+	font-size: 20px;
+}
+.features .find-gift-button {
+	width: 200px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	background-color: #F7941E;
+	border-radius: 5px;
+	color: #fff;
+	text-transform: uppercase;
+	margin-top: 50px;
+}
+.features .learn-more-button {
+	width: 200px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	border: 1px solid #F7941E;
+	border-radius: 5px;
+	color: #F7941E;
+	text-transform: uppercase;
+	margin-top: 35px;
+}
+.wrap {
+	width: 1170px;
+	margin: auto;
+	padding: 90px 0;
+}
+.title {
+	font-size: 32px;
+	font-weight: 400;
+}
+.subtitle {
+	font-size: 18px;
+	font-weight: 300;
+}
+.occasions .title,
+.occasions .subtitle, 
+.blogs .title,
+.blogs .subtitle {
+	text-align: center;
+}
+.occasions-cards {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 60px; 
+}
+.occasion-card-item {
+	width: 270px;
+	background-color: #fafafa;
+	transition: .3s;
+}
+.occasion-card-item:hover {
+	background-color: #fff;
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, .05); 
+}
+.card-name {
+	font-size: 20px;
+}
+.card-desc {
+	padding: 24px;
+}
+.occasions-cards .see-more {
+	margin-top: 75px;
+	font-size: 14px; 
+}
+.cta {
+	background-color: #f7941e;
+}
+.cta .wrap {
+	padding: 80px 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.cta-info h3, .cta-info p {
+	font-size: 32px;
+	margin: 0 0 10px;
+}
+.cta-action {
+	width: 415px;
+}
+.cta-buttons {
+	display: flex;
+	justify-content: space-between;
+}
+.cta-buttons div {
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	border-radius: 5px;
+	text-transform: uppercase; 
+}
+.button-primary {
+	background-color: #231f20;
+	color: #fff;
+}
+.button-secondary {
+	border: 1px solid #231f20;
+}
+.blog-card {
+	background-color: #231F20;
+	display: flex;
+	margin-top: 60px;
+	align-items: center;
+}
+.blog-card-img {
+	width: 400px;
+}
+.blog-card-img img {
+	display: block;
+}
+.blog-card-info {
+	width: 500px;
+	margin: 0 80px; 
+}
+.blog-card h3 {
+	font-size: 48px;
+	color: #fff;
+	font-weight: 400;
+}
+.blog-card .author {
+	font-size: 14px;
+	color: #fff;
+}
+.blog-card .read-more {
+	color: #fff
+}
+.blog-subcards {
+	display: flex;
+	justify-content: space-between;
+	margin: 40px 0;
+}
+.blog-subcard {
+	width: 570px;
+	padding: 50px;
+	transition: .3s;
+}
+.blog-subcard:hover {
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, .05);
+}
+.blog-subcard h4 {
+	font-size: 18px;
+}
+.blog-subcard .read-more {
+	font-size: 14px;
+}
+footer {
+	background-color: #fafafa;
+	padding: 115px 0 35px;
+}
+footer nav {
+	width: 600px;
+	margin: auto;
+}
+.footer-nav {
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.footer-nav li {
+	font-weight: 700;
+	font-size: 14px;
+	padding: 0 25px; 
+}
+.footer-nav li:first-child {
+	padding-left: 0;
+}
+.footer-nav li:last-child {
+	padding-right: 0;
+}
+.footer-logo {
+	padding: 0 115px!important;
+}
+.footer-logo img {
+	width: auto;
+}
+.line {
+	width: 1000px;
+	margin: 55px auto;
+	border: 1px solid #000;
+}
+footer .social {
+	width: 300px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+footer .copyright {
+	font-size: 14px;
+	text-align: center;
+	margin-top: 70px;
+}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="header-wrap">
+			<div class="logo">
+				<img src="img/logo.png">
+			</div>
+			<nav>
+				<ul class="nav">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Service</a></li>
+					<li><a href="#">Blogs</a></li>
+				</ul>
+			</nav>
+			<div class="gift-finder">
+				gift finder
+			</div>
+		</div>
+	</header>
+	<main>
+	<section class="features">
+		<div class="features-info">
+			<div class="features-desc">
+				<div class="content">
+					<h1 class="features-title">
+						Find a gift for your wife or girlfriend
+					</h1>
+					<p>
+						Struggling to find a gift for your wife or girlfriend? No problem!
+					</p>
+					<div class="find-gift-button">
+						Find gift now
+					</div>
+				</div>
+			</div>
+			<div class="features-img">
+				<img src="img/pare.png">
+			</div>
+		</div>
+		<div class="features-work">
+			<div class="features-img">
+				<img src="img/media.png">
+			</div>
+			<div class="features-desc">
+				<div class="content">
+					<h3 class="features-subtitle">
+						How we work
+					</h3>
+					<p>
+						We’ve actually already asked hundreds of women what they want, and made a database with the results. All you have to do is take our short survey that only takes seconds, and our proprietary algorithm will match you with a few perfect gift options.
+					</p>
+					<div class="learn-more-button">
+						Learn More
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="occasions">
+		<div class="wrap">
+			<h3 class="title">
+				Gifts for all Occasions
+			</h3>
+			<h5 class="subtitle">
+				“Try our web app to find the best gifts for all occasions”
+			</h5>
+			<div class="occasions-cards">
+				<div class="occasion-card-item">
+					<img src="img/birthday.png">
+					<div class="card-desc">
+						<div class="card-name">
+							Birthday
+						</div>
+						<div class="see-more">
+							<a href="#">
+								See More >
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="occasion-card-item">
+					<img src="img/rectangle2.png">
+					<div class="card-desc">
+						<div class="card-name">
+							Anniversary
+						</div>
+						<div class="see-more">
+							<a href="#">
+								See More >
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="occasion-card-item">
+					<img src="img/rectangle3.png">
+					<div class="card-desc">
+						<div class="card-name">
+							Valentine's Day
+						</div>
+						<div class="see-more">
+							<a href="#">
+								See More >
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="occasion-card-item">
+					<img src="img/rectangle4.png">
+					<div class="card-desc">
+						<div class="card-name">
+							Christmas
+						</div>
+						<div class="see-more">
+							<a href="#">
+								See More >
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="cta">
+		<div class="wrap">
+			<div class="cta-info">
+				<h3>Ready to get started?</h3>
+				<p>Sign up or contact us</p>
+			</div>
+			<div class="cta-action">
+				<div class="cta-buttons">
+					<div class="button-primary">
+						Find gift now
+					</div>
+					<div class="button-secondary">
+						how it works
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="blogs">
+		<div class="wrap">
+			<h3 class="title">
+				Our Best Blogs Ever
+			</h3>
+			<h5 class="subtitle">
+				“Try our blog to find the best tips and tricks to select your gift”
+			</h5>
+			<div class="blog-card">
+				<div class="blog-card-img">
+					<img src="img/family.png">
+				</div>
+				<div class="blog-card-info">
+					<div class="author">
+						Mr. John Doe
+					</div>
+					<h3>
+						The best way to wish your wife
+					</h3>
+					<div class="read-more">
+						<a href="#">
+							Read More
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="blog-subcards">
+				<div class="blog-subcard">
+					<h4>
+						Database to find the gifts for your girlfriend
+					</h4>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...
+					</p>
+					<div class="read-more">
+						<a href="#">
+							Read More
+						</a>
+					</div>
+				</div>
+				<div class="blog-subcard">
+					<h4>
+						Database to find the gifts for your girlfriend
+					</h4>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...
+					</p>
+					<div class="read-more">
+						<a href="#">
+							Read More
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	</main>
+	<footer>
+		<nav>
+			<ul class="footer-nav">
+				<li>Home</li>
+				<li>About</li>
+				<li class="footer-logo">
+					<img src="img/logo-orange.png" alt="">
+				</li>
+				<li>Services</li>
+				<li>Blog</li>
+			</ul>
+		</nav>
+		<div class="line"></div>
+		<div class="social">
+			<div>
+				<img src="img/f.png" alt="">
+			</div>
+			<div>
+				<img src="img/t.png" alt="">
+			</div>
+			<div>
+				<img src="img/i.png" alt="">
+			</div>
+			<div>
+				<img src="img/y.png" alt="">
+			</div>
+			<div>
+				<img src="img/p.png" alt="">
+			</div>
+		</div>
+		<div class="copyright">
+			© 2010 - 2021 Privacy - Terms
+		</div>
+	</footer>
+</body>
+</html>
